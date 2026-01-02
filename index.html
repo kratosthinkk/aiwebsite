@@ -6,10 +6,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bienvenue sur la Plateforme d'Apprentissage Personnalisé par IA</h1>
-    <p>Commencez par entrer un sujet pour générer un cours !</p>
-    <input type="text" placeholder="Enter a topic to learn...">
-    <button>Generate Course</button>
+    <!-- Header -->
+    <header>
+        <h1>Learn Anything with AI</h1>
+        <p>Powered by artificial intelligence</p>
+    </header>
+
+    <!-- Génération de cours -->
+    <section id="course-generator">
+        <input type="text" id="topic-input" placeholder="Enter a topic to learn...">
+        <button id="generate-course">Generate Course</button>
+    </section>
+
+    <!-- Dashboard utilisateur -->
+    <section id="dashboard">
+        <h2>Welcome, User!</h2>
+        <div class="stats">
+            <p>Total Courses: <span id="total-courses">0</span></p>
+            <p>Points: <span id="points">0</span></p>
+            <p>Day Streak: <span id="day-streak">0</span></p>
+        </div>
+
+        <!-- Liste de cours -->
+        <h3>My Courses</h3>
+        <ul id="course-list">
+            <!-- Les cours apparaîtront ici -->
+        </ul>
+        <button id="new-course">+ New Course</button>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2025 KratosThink. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
