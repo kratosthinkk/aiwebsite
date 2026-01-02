@@ -6,16 +6,25 @@
     <title>KratosThink - Learn Anything with AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-theme">
     <!-- Header -->
     <header>
         <div class="logo">
-            <span class="icon">💡</span>
+            <div class="icon-box">💡</div>
             <span class="text">KratosThink</span>
         </div>
         <div class="header-icons">
-            <span id="dark-mode-toggle">🌙</span>
-            <span id="user-account">👤</span>
+            <span id="dark-mode-toggle" class="icon-btn">🌙</span>
+            <div class="user-menu-wrapper">
+                <span id="user-account" class="icon-btn">👤</span>
+                <div id="user-dropdown" class="dropdown">
+                    <ul>
+                        <li><a href="#">Se connecter</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Se déconnecter</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -25,14 +34,17 @@
         <p>Generate personalized courses on any topic. Powered by artificial intelligence.</p>
         
         <div class="search-container">
-            <input type="text" id="topic-input" placeholder="Enter a topic to learn...">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="topic-input" placeholder="Enter a topic to learn...">
+            </div>
             <button id="generate-course">Generate Course ➔</button>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 KratosThink. All rights reserved.</p>
+        <p>© 2026 KratosThink. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
