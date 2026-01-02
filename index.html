@@ -2,40 +2,35 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Plateforme d'Apprentissage IA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KratosThink - Learn Anything with AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>Learn Anything with AI</h1>
-        <p>Powered by artificial intelligence</p>
+        <div class="logo">
+            <span class="icon">💡</span>
+            <span class="text">KratosThink</span>
+        </div>
+        <div class="header-icons">
+            <span id="dark-mode-toggle">🌙</span>
+            <span id="user-account">👤</span>
+        </div>
     </header>
 
-    <!-- Génération de cours -->
-    <section id="course-generator">
-        <input type="text" id="topic-input" placeholder="Enter a topic to learn...">
-        <button id="generate-course">Generate Course</button>
-    </section>
-
-    <!-- Dashboard utilisateur -->
-    <section id="dashboard">
-        <h2>Welcome, User!</h2>
-        <div class="stats">
-            <p>Total Courses: <span id="total-courses">0</span></p>
-            <p>Points: <span id="points">0</span></p>
-            <p>Day Streak: <span id="day-streak">0</span></p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Learn Anything with AI</h1>
+        <p>Generate personalized courses on any topic. Powered by artificial intelligence.</p>
+        
+        <div class="search-container">
+            <input type="text" id="topic-input" placeholder="Enter a topic to learn...">
+            <button id="generate-course">Generate Course ➔</button>
         </div>
-
-        <!-- Liste de cours -->
-        <h3>My Courses</h3>
-        <ul id="course-list">
-            <!-- Les cours apparaîtront ici -->
-        </ul>
-        <button id="new-course">+ New Course</button>
     </section>
 
-    <!-- Pied de page -->
+    <!-- Footer -->
     <footer>
         <p>© 2025 KratosThink. All rights reserved.</p>
     </footer>
@@ -43,3 +38,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
